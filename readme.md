@@ -1,13 +1,25 @@
-# 
+# Polygon MonteCarlo Simulation
+Here we have an implementation of the Monte Carlo method to estimate the area of an irregular figure inside a square. The Monte Carlo method involves generating random points within the square and determining the proportion that fall inside the irregular figure.
 
+To estimate the area of the irregular figure, use the following formula:
 
+    Estimated Area of Irregular Figure = (Number of Points Inside Irregular Figure / Total Number of Points Inside Square) × Area of Square
+
+In practice we:
+- Generate many random points within a square that surrounds the shape.
+- Count how many points fall inside the irregular shape.
+- Estimate the area of the shape based on the ratio of points inside it compared to the total number of points.
+
+Please note than in `save_irregular_points.py` we use the NPY format because it's faster compared to other formats. 
+It's true that the benefits are minimal, but consider it a best practice.
 
 ## Languages and Tools
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
 
 ## Requirements
 ```
-Just Python 3.11.2
+matplotlib==3.6.3
+numpy==1.24.2
 ```
 
 ## Test Coverage

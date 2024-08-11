@@ -13,7 +13,6 @@ def calculate_area_irregular(points, poly, square_size):
     return area_irregular_estimated, inside_points
 
 def save_irregular_points(filename):
-    # Define the irregular figure's points
     irregular_points = np.array([
         [2, 2], [4, 1], [6, 2], [7, 5], [5, 8], [2, 6]
     ])
