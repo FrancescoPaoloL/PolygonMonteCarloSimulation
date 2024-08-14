@@ -6,9 +6,12 @@ To estimate the area of the irregular figure, use the following formula:
     Estimated Area of Irregular Figure = (Number of Points Inside Irregular Figure / Total Number of Points Inside Square) × Area of Square
 
 In practice we:
+
 - Generate many random points within a square that surrounds the shape.
 - Count how many points fall inside the irregular shape.
 - Estimate the area of the shape based on the ratio of points inside it compared to the total number of points.
+
+![example](https://github.com/user-attachments/assets/77bf6718-014b-4174-8f3e-7abe873085db)
 
 Please note than in `save_irregular_points.py` we use the NPY format because it's faster compared to other formats. 
 It's true that the benefits are minimal, but consider it a best practice.
